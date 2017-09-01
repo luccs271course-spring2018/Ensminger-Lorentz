@@ -2,9 +2,9 @@ package hw;
 
 public class Main {
 
-	public static void main(String[] args) {
-		final HelloWorld instance = new HelloWorld();
-		System.out.println(instance.getMessage());
-		System.out.println(instance.getYear());
+	public static void main(String[] args)
+    {
+		System.out.println("This is the beginning of Ben's branch");
+
 	}
 }
