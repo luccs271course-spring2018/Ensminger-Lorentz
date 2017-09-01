@@ -12,7 +12,7 @@ public class Main {
 		System.out.print("Enter Max Number: ");
 		max = reading.nextInt();
 
-		for(int i = 0; i <= max ; i++)
+		for(int i = 1; i <= max ; i++)
 		{
 			if((i % 3 == 0 && i%5 == 0) && i != 0)
 			{
