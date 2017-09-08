@@ -14,7 +14,7 @@ public class Main {
         fizzBuzz(max);
     }
 
-    private static String[] fizzBuzz(int n) {
+    public static String[] fizzBuzz(int n) {
         String[] storage = new String[n + 1];
 
         for (int i = 1; i <= n; i++) {

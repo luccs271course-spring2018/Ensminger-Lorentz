@@ -8,11 +8,11 @@ import org.junit.Test;
 
 public class TestHelloWorld {
 
-	private HelloWorld fixture;
+	private Main fixture;
 	
 	@Before
 	public void setUp() throws Exception {
-		fixture = new HelloWorld();
+		fixture = new Main();
 	}
 
 	@After
@@ -23,19 +23,8 @@ public class TestHelloWorld {
 	@Test
 	public void getMessage() {
 		assertNotNull(fixture);
-		assertEquals("hello world", fixture.getMessage());
+		assertEquals("hello world", fixture.fizzBuzz(5));
 	}
 
-	@Test
-	public void getMessage2() {
-		assertNull(fixture);
-		assertEquals("hello world", fixture.getMessage());
-	}
-
-	@Test
-	public void getYear() {
-		assertNotNull(fixture);
-		assertEquals(2009, fixture.getYear());
-	}
 
 }
