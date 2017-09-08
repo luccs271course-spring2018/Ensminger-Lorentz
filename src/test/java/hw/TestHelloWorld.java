@@ -20,10 +20,15 @@ public class TestHelloWorld {
 		fixture = null;
 	}
 
+
+
 	@Test
 	public void getMessage() {
 		assertNotNull(fixture);
-		assertEquals("hello world", fixture.fizzBuzz(5));
+
+		String [] storagecheck = {"1", "2", "fizz","4", "buzz"};
+		assertArrayEquals(storagecheck , fixture.fizzBuzz(5));
+
 	}
 
 
