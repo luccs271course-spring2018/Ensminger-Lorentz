@@ -61,7 +61,7 @@ public class TestHelloWorld {
 		assertNotNull(fixture);
 
 		String [] storagecheck = {"1", "2", "fizz","4", "buzz","fizz","7","8","fizz","buzz","11","fizz","13","14","fizz buzz","16","17"};
-		assertArrayEquals(storagecheck , fixture.fizzBuzz(7));
+		assertArrayEquals(storagecheck , fixture.fizzBuzz(17));
 
 	}
 

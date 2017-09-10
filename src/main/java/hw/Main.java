@@ -2,7 +2,7 @@ package hw;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.List*;
+import java.util.List;
 
 
 public class Main {
@@ -21,7 +21,7 @@ public class Main {
         fizzBuzz(max);
     }
 
-    public static String[] fizzBuzz(int n) {
+    public static List<String> fizzBuzz(int n) {
         List<String> storage = new ArrayList<>();
 
         for (int i = 1; i < n + 1; i++) {
@@ -43,7 +43,6 @@ public class Main {
             String output= storage.get(i-1);
 			System.out.println(output);
         }
-        System.out.print(storage);
         return storage;
     }
 }
