@@ -1,5 +1,6 @@
 package hw;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List*;
 
@@ -21,25 +22,26 @@ public class Main {
     }
 
     public static String[] fizzBuzz(int n) {
-        String[] storage = new String[n];
+        List<String> storage = new ArrayList<>();
 
         for (int i = 1; i < n + 1; i++) {
             if ((i % 3 == 0 && i % 5 == 0) && i != 0) {
-                storage[i-1] = "fizz buzz";
+                storage.add("fizz buzz");
             } else if ((i % 3 == 0) && i != 0)
 
             {
-                storage[i-1] = "fizz";
+                storage.add("fizz");
             }
             else if ((i % 5 == 0) && i != 0)
 			{
-                storage[i-1] = "buzz";
+                storage.add("buzz");
             }
             else
 			{
-                storage[i-1] = Integer.toString(i);
+                storage.add(Integer.toString(i));
             }
-			System.out.println(storage[i-1]);
+            String output= storage.get(i-1);
+			System.out.println(output);
         }
         System.out.print(storage);
         return storage;
