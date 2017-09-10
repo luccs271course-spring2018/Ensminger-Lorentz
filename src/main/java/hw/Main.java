@@ -10,6 +10,10 @@ public class Main {
 
         System.out.print("Enter Max Number: ");
         max = reading.nextInt();
+        if(max<= 0)
+        {
+            System.out.println("Invalid entry, number must be greater than or equal to 1");
+        }
 
         fizzBuzz(max);
     }
@@ -19,7 +23,7 @@ public class Main {
 
         for (int i = 1; i < n + 1; i++) {
             if ((i % 3 == 0 && i % 5 == 0) && i != 0) {
-                storage[i-1] = "Fizz Buzz";
+                storage[i-1] = "fizz buzz";
             } else if ((i % 3 == 0) && i != 0)
 
             {
