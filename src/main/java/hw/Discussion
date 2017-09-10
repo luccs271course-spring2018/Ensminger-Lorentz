@@ -1,0 +1,5 @@
+Part 2 Discussion: We would write a program that would always print the fizz-buzz values for 1 to 17. This could be done by writing 17 system.out.println() statements in the main method. You would manually have to figure out what numbers would be replaced with words and which words are the correct ones to replace them with. You would then start the first print statement with the value for 1 then move down in sequential until you end with the output for 17.
+
+Part 3 Discussion: We could have run the program several times without the tester suite, testing all the given numbers on their own and manually confirmed if the numbers were correct or not.
+
+Part 4 Discussion: Yes, it maters what type of list you have. You can’t use a regular list because it will not hold items in a specific order where as an array or array list will keep the order of the objects that will be printed.
