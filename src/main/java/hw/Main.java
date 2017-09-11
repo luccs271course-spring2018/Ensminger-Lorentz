@@ -8,17 +8,19 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner reading = new Scanner(System.in);
-        int max = 0;
 
-        System.out.print("Enter Max Number: ");
-        max = reading.nextInt();
-        if(max<= 0)
-        {
-            System.out.println("Invalid entry, number must be greater than or equal to 1");
-        }
+            Scanner reading = new Scanner(System.in);
+            int max = 0;
 
-        fizzBuzz(max);
+            System.out.print("Enter Max Number: ");
+            max = reading.nextInt();
+            if (max <= 0) {
+                System.out.println("Invalid entry, number must be greater than or equal to 1");
+
+                return;
+            }
+
+            fizzBuzz(max);
     }
 
     public static List<String> fizzBuzz(int n) {
