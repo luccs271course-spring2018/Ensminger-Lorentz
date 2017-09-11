@@ -42,7 +42,7 @@ public class TestHelloWorld {
 		assertEquals(check, fixture.fizzBuzz(0));
 	}*/
 
-	@Test
+	/*@Test
 	public void getTest4() {
 		assertNotNull(fixture);
 
@@ -58,12 +58,16 @@ public class TestHelloWorld {
 		String [] storagecheck = {"1", "2", "fizz","4", "buzz","fizz","7"};
 		assertArrayEquals(storagecheck , fixture.fizzBuzz(7));
 
-	}
+	}*/
 	@Test
 	public void getMessage() {
 		assertNotNull(fixture);
-		ArrayList<String> storagecheck = new ArrayList<>();
-		storagecheck.add("1", "2", "fizz","4", "buzz","fizz","7","8","fizz","buzz","11","fizz","13","14","fizz buzz","16","17");
+		ArrayList<String> checking = new ArrayList<>();
+		String [] storagecheck =("1", "2", "fizz","4", "buzz","fizz","7","8","fizz","buzz","11","fizz","13","14","fizz buzz","16","17");
+		for (String num: storagecheck)
+		{
+			checking.add(num);
+		}
 		assertEquals(storagecheck , fixture.fizzBuzz(17));
 
 	}
