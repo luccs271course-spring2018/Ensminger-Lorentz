@@ -24,7 +24,8 @@ public class Main {
 
     public static List<String> fizzBuzz(int n) {
         List<String> storage = new ArrayList<>();
-        while(n>0) {
+        String message = "The integer entered must be greater than or equal to 1";
+        if (n>0) {
             for (int i = 1; i < n + 1; i++) {
                 if ((i % 3 == 0 && i % 5 == 0) && i != 0) {
                     storage.add("fizz buzz");
@@ -40,8 +41,11 @@ public class Main {
                 String output = storage.get(i - 1);
                 System.out.println(output);
             }
+            return storage;
         }
-        return storage;
+        else{
+            return message;
+        }
     }
 }
 
