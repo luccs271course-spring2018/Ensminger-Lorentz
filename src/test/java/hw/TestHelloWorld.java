@@ -21,7 +21,7 @@ public class TestHelloWorld {
 	public void tearDown() throws Exception {
 		fixture = null;
 	}
-	@Test
+	/*@Test
 	public void getTest1()
 	{
 		assertNotNull(fixture);
@@ -40,8 +40,9 @@ public class TestHelloWorld {
 		assertNotNull(fixture);
 		String check = "Invalid entry, number must be greater than or equal to 1";
 		assertEquals(check, fixture.fizzBuzz(0));
-	}
-	/*@Test
+	}*/
+
+	@Test
 	public void getTest4() {
 		assertNotNull(fixture);
 
@@ -66,6 +67,6 @@ public class TestHelloWorld {
 		assertEquals(storagecheck , fixture.fizzBuzz(17));
 
 	}
-	*/
+
 
 }
