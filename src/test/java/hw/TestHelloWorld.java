@@ -31,6 +31,46 @@ public class TestHelloWorld {
         assertEquals(storageCheck, fixture.fizzBuzz(17));
 
     }
+	@Test
+	public void getTest1() {
+		assertNotNull(fixture);
+		ArrayList<String> storageCheck = new ArrayList<>();
+		storageCheck.addAll(Arrays.asList("1", "2", "fizz", "4", "buzz", "fizz", "7"));
+		assertEquals(storageCheck, fixture.fizzBuzz(7));
+
+	}
+	@Test
+	public void getTest2() {
+		assertNotNull(fixture);
+		ArrayList<String> storageCheck = new ArrayList<>();
+		storageCheck.add("1");
+		assertEquals(storageCheck, fixture.fizzBuzz(1));
+
+	}
+	@Test
+	public void getTest3() {
+		assertNotNull(fixture);
+		ArrayList<String> storageCheck = new ArrayList<>();
+		storageCheck.addAll(Arrays.asList("The integer entered must be greater than or equal to 1"));
+		assertEquals(storageCheck, fixture.fizzBuzz(-10));
+
+	}
+	@Test
+	public void getTest4() {
+		assertNotNull(fixture);
+		ArrayList<String> storageCheck = new ArrayList<>();
+		storageCheck.addAll(Arrays.asList("The integer entered must be greater than or equal to 1"));
+		assertEquals(storageCheck, fixture.fizzBuzz(-1));
+
+	}
+	@Test
+	public void getTest5() {
+		assertNotNull(fixture);
+		ArrayList<String> storageCheck = new ArrayList<>();
+		storageCheck.addAll(Arrays.asList("The integer entered must be greater than or equal to 1"));
+		assertEquals(storageCheck, fixture.fizzBuzz(0));
+
+	}
 
 
 }
