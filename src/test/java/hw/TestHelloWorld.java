@@ -27,24 +27,30 @@ public class TestHelloWorld {
     public void getMessage() {
         assertNotNull(fixture);
         ArrayList<String> storageCheck = new ArrayList<>();
+//        String[] storageCheck= new String{"1", "2", "fizz", "4", "buzz", "fizz", "7", "8", "fizz", "buzz", "11", "fizz", "13", "14", "fizz buzz", "16","17"};
         storageCheck.addAll(Arrays.asList("1", "2", "fizz", "4", "buzz", "fizz", "7", "8", "fizz", "buzz", "11", "fizz", "13", "14", "fizz buzz", "16", "17"));
         assertEquals(storageCheck, fixture.fizzBuzz(17));
+//        assertArrayEquals(storageCheck,fixture.fizzBuzz(n:17));
 
     }
 	@Test
 	public void getTest1() {
 		assertNotNull(fixture);
 		ArrayList<String> storageCheck = new ArrayList<>();
+//		String[] storageCheck= new String{"1", "2", "fizz", "4", "buzz", "fizz", "7"};
 		storageCheck.addAll(Arrays.asList("1", "2", "fizz", "4", "buzz", "fizz", "7"));
 		assertEquals(storageCheck, fixture.fizzBuzz(7));
+//		assertArrayEquals(storageCheck,fixture.fizzBuzz(n:7));
 
 	}
 	@Test
 	public void getTest2() {
 		assertNotNull(fixture);
 		ArrayList<String> storageCheck = new ArrayList<>();
+//		String[] storageCheck= new String{"1"};
 		storageCheck.add("1");
 		assertEquals(storageCheck, fixture.fizzBuzz(1));
+//		assertArrayEquals(storageCheck,fixture.fizzBuzz(n:1));
 
 	}
 	@Test
