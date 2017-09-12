@@ -46,4 +46,28 @@ public class Main {
         }
     }
 }
-
+//This is for Part 2 and 3 of the project
+ /*   public static String[] fizzBuzz(int n) {
+        String[] storage = new String [n]();
+        String[] message = new String {"The integer entered must be greater than or equal to 1"};
+        if (n > 0) {
+            for (int i = 1; i < n + 1; i++) {
+                if ((i % 3 == 0 && i % 5 == 0) && i != 0) {
+                    storage[n-1]=i;
+                } else if ((i % 3 == 0) && i != 0)
+                {
+                    storage[n-1]=i;
+                } else if ((i % 5 == 0) && i != 0) {
+                    storage[n-1]=i;
+                } else {
+                    storage[n-1]=(Integer.toString(i));
+                }
+                String output = storage[n-1];
+                System.out.println(output);
+            }
+            return storage;
+        } else {
+            return message;
+        }
+    }
+}*/
