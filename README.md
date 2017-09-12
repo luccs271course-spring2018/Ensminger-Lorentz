@@ -1,36 +1,14 @@
-[![Build Status](https://travis-ci.org/LoyolaChicagoCode/hello-java.svg?branch=master)](https://travis-ci.org/LoyolaChicagoCode/hello-java)
+#Lab #1 Ensminger-Lorentz Response
 
-This build will always fail because it has 2 examples of failing tests:
-one based on the source code, and one based on an incorrect test.
+##Layout
+* Discussion.md outlines the discussion responses for our group.
+* There is one commit for all parts of the lab
+* The final submission is structured for part 4 of the lab
+* The other parts are commented out throughout the main.java and the TestHelloWorld.java files
+* There are comments for areas that need to be commented out in order to test a certain part
 
-# Learning Objectives
+##Aim
+>The aim of this project was to construct a program that recieved a number and output a response up until the input. For any factors of 3 the program would output "fizz", for factors of 5 the program would output "buzz".
 
-* Simple hello world example
-* Building with Gradle (using the Gradle wrapper)
-* Automated unit testing with JUnit
-* Continuous integration with Travis
+Last updated 9/11/2017
 
-# System requirements hello
-
-* Java 6 SDK or later
-
-# Running the Application
-
-On Linux or Mac OS X:
-
-    $ ./gradlew run
-	
-On Windows:
-	
-	> gradlew run
-
-# Running the Tests
-
-On Linux or Mac OS X:
-
-    $ ./gradlew test
-	
-On Windows:
-	
-	> gradlew test
-"# Ensminger-Lorentz" 

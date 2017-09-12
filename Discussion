@@ -1,0 +1,16 @@
+#Discussion Responses
+###Ensminger-Lorentz Repo
+
+##Part 2
+>We would write a program that would always print the fizz-buzz values for 1 to 17.
+This could be done by hard coding max as 17 in the main method. The main method would always output the save values.
+
+##Part 3 
+>We could have built a tester class with the gradle format which passes in an argument. Or called an assert statement which would return true or false for an expected response and a hard coded value. The response could be returned in the terminal based on passing or failing the test.
+
+##Part 4
+>The logic that decides whether a number or fizz buzz appear or are stored in the array stays the same throughout the exercise.
+It does not really matter from a functional standpoint which type you choose, it is more stylistic.
+
+>One way an array list does give us some freedom is related to the length of arrays. When instantiating an array the length must be set.
+The more dynamic arrayList with its add method function allows us to be more flexible with the growth of the array. 
